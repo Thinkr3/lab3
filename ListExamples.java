@@ -3,6 +3,12 @@ import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
 
+class StringCheckerSuper implements StringChecker{
+  public boolean checkString(String s) {
+      return s.contains("super");
+  }
+}
+
 class ListExamples {
 
   // Returns a new list that has all the elements of the input list for which

@@ -68,4 +68,10 @@ public class ArrayTests {
     assertArrayEquals(new int[]{5, 4, 3, 2, 1}, input1);
   }
 
+  @Test 
+  public void testAverageWithSameLowest() {
+    double[] input = {5.0, 3.0, 3.0};
+    assertEquals(4.0, ArrayExamples.averageWithoutLowest(input), 1);
+  }
+
 }
