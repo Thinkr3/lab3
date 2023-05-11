@@ -74,4 +74,10 @@ public class ArrayTests {
     assertEquals(4.0, ArrayExamples.averageWithoutLowest(input), 1);
   }
 
+  @Test 
+  public void testAverageWithDifferentValues() {
+    double[] input = {5.0, 15.0, 3.0};
+    assertEquals(10.0, ArrayExamples.averageWithoutLowest(input), 1);
+  }
+
 }
